@@ -8,7 +8,7 @@
 
 ## Overview
 
-**JAX** is an open-source numerical computing library developed by Google that combines **NumPy-like** functionality with **automatic differentiation** (autodiff) and **GPU/TPU acceleration**. It is designed to enable high-performance numerical computing, machine learning research, and experimental deep learning applications. JAX stands out due to its ability to support **just-in-time (JIT) compilation**, **vectorization**, and **automatic differentiation**, which are critical for creating efficient and scalable models.
+**JAX** is an open-source numerical computing library created by Google that offers **NumPy-like** features along with **automatic differentiation** (autodiff) and **GPU/TPU acceleration**. It is designed to enable high-performance numerical computing, machine learning research, and experimental deep learning applications. JAX stands out due to its ability to support **just-in-time (JIT) compilation**, **vectorization**, and **automatic differentiation**, which are critical for creating efficient and scalable models.
 
 ### Key Features
 - **Autodiff**: Automatic differentiation is built-in, which is essential for machine learning applications.
@@ -30,13 +30,12 @@
 - [Use Cases](#use-cases)
 - [Why JAX Over Other Libraries?](#why-jax-over-other-libraries)
 - [Conclusion](#conclusion)
-- [License](#license)
 
 ---
 
 ## Architecture
 
-JAX’s architecture is centered around **automatic differentiation** and **XLA** (Accelerated Linear Algebra), which enables it to achieve high performance on CPUs, GPUs, and TPUs. Here’s a breakdown of the core components:
+JAX’s architecture is centred around **automatic differentiation** and **XLA** (Accelerated Linear Algebra), which enables it to achieve high performance on CPUs, GPUs, and TPUs. Here’s a breakdown of the core components:
 
 1. **Autodiff Engine**:
    - JAX uses **reverse-mode** and **forward-mode differentiation** to compute gradients, making it suitable for machine learning tasks, where gradient-based optimization is crucial.
@@ -119,15 +118,15 @@ JAX’s unique features make it an excellent choice for experimental machine lea
 
 ## Use Cases
 
-- **Neural Network Training**: JAX is commonly used for building custom neural networks in research settings, allowing researchers to implement novel architectures and differentiation techniques.
+- **Neural Network Training**: JAX is commonly used to build custom neural networks in research settings, allowing researchers to implement novel architectures and differentiation techniques.
   
 - **Reinforcement Learning (RL)**: JAX’s fast autodiff and JIT capabilities are beneficial for RL, where fast gradient computations are necessary for policy updates.
 
-- **Differentiable Physics and Simulations**: JAX is increasingly used in physical simulations and differentiable programming tasks where gradient information is necessary, such as modeling physical phenomena or optimization.
+- **Differentiable Physics and Simulations**: JAX is increasingly used in physical simulations and differentiable programming tasks where gradient information is necessary, such as modelling physical phenomena or optimization.
 
-- **Bayesian Inference**: JAX is used in probabilistic programming and Bayesian inference due to its support for autodiff in probabilistic models.
+- **Bayesian Inference**: JAX is used in probabilistic programming and Bayesian inference because it supports autodiff in probabilistic models.
 
-- **Computational Biology**: JAX’s performance and autodiff features are valuable for tasks in bioinformatics, such as protein folding, evolutionary modeling, and molecular dynamics.
+- **Computational Biology**: JAX’s performance and autodiff features are valuable for tasks in bioinformatics, such as protein folding, evolutionary modelling, and molecular dynamics.
 
 ---
 
@@ -151,10 +150,4 @@ JAX’s unique features make it an excellent choice for experimental machine lea
 
 ## Conclusion
 
-**JAX** is a high-performance library tailored for machine learning research, scientific computing, and experimental applications that demand customizability and scalability. Its integration of JIT compilation and automatic differentiation makes it a powerful tool for developing novel machine learning algorithms and optimizing complex numerical computations. JAX is an excellent choice for research-oriented projects where control over low-level computations is necessary, and its compatibility with GPUs and TPUs enables large-scale, distributed computing with minimal setup.
-
----
-
-### License
-
-JAX is licensed under the **Apache License 2.0**. For more details, refer to the [LICENSE](LICENSE) file.
+**JAX** is a high-performance library tailored for machine learning research, scientific computing, and experimental applications that demand customizability and scalability. Its integration of JIT compilation and automatic differentiation makes it a powerful tool for developing novel machine-learning algorithms and optimizing complex numerical computations. JAX is an excellent choice for research-oriented projects where control over low-level computations is necessary, and its compatibility with GPUs and TPUs enables large-scale, distributed computing with minimal setup.
