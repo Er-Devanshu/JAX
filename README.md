@@ -23,6 +23,7 @@
 
 - [Overview](#overview)
 - [Architecture](#architecture)
+- [Installation](#installation)
 - [Key Advantages](#key-advantages)
 - [Disadvantages](#disadvantages)
 - [Usage](#usage)
@@ -54,6 +55,29 @@ JAX’s architecture is centered around **automatic differentiation** and **XLA*
 - **Autodiff**: Automatic differentiation for computing gradients and Jacobians.
 - **Transformations**: Batch and parallel transformations, enabling vectorized and distributed computation.
 - **NumPy API Compatibility**: A comprehensive subset of the NumPy API for compatibility and ease of use.
+
+## Installation
+
+### Supported platforms
+
+|            | Linux x86_64 | Linux aarch64 | Mac x86_64   | Mac aarch64  | Windows x86_64 | Windows WSL2 x86_64 |
+|------------|--------------|---------------|--------------|--------------|----------------|---------------------|
+| CPU        | yes          | yes           | yes          | yes          | yes            | yes                 |
+| NVIDIA GPU | yes          | yes           | no           | n/a          | no             | experimental        |
+| Google TPU | yes          | n/a           | n/a          | n/a          | n/a            | n/a                 |
+| AMD GPU    | yes          | no            | experimental | n/a          | no             | no                  |
+| Apple GPU  | n/a          | no            | n/a          | experimental | n/a            | n/a                 |
+
+
+### Instructions
+
+| Platform        | Instructions                                                                                                    |
+|-----------------|-----------------------------------------------------------------------------------------------------------------|
+| CPU             | `pip install -U jax`                                                                                            |
+| NVIDIA GPU      | `pip install -U "jax[cuda12]"`                                                                                  |
+| Google TPU      | `pip install -U "jax[tpu]" -f https://storage.googleapis.com/jax-releases/libtpu_releases.html`                 |
+| AMD GPU (Linux) | Use [Docker](https://hub.docker.com/r/rocm/jax-community/tags), [pre-built wheels](https://github.com/ROCm/jax/releases), or [build from source](https://jax.readthedocs.io/en/latest/developer.html#additional-notes-for-building-a-rocm-jaxlib-for-amd-gpus). |
+| Mac GPU         | Follow [Apple's instructions](https://developer.apple.com/metal/jax/).       
 
 ---
 
